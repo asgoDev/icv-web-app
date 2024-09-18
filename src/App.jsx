@@ -1,13 +1,8 @@
-
+import HomePage from '@/pages/HomePage/HomePage'
 import './App.css'
 
 function App() {
-
-  return (
-    <h1>
-      here we go
-    </h1>
-  )
+  return <HomePage />
 }
 
 export default App
