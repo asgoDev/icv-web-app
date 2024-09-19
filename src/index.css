@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: 'Monserrat', Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  font-weight: 300;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --black: #111111;
+  --white: #ffffff;
+  --blue: #0066ff;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary: var(--black);
+  --secondary: var(--white)
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
 
 /* @media (prefers-color-scheme: light) {
   :root {

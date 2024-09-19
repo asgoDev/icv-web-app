@@ -1,12 +1,12 @@
 // import { PropTypes } from 'prop-types'
-import '../styles/input.css'
+import './input.css'
 
 const Input = ({ config, register }) => {
   let { label, type = 'text', name } = config
   return (
     // <label className='form-input_label'>
     <input
-      className="form-input"
+      className="input"
       name={name}
       type={type}
       placeholder={label}

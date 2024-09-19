@@ -2,3 +2,29 @@
     display: flex;
     justify-content: space-between;
 }
+
+.input {
+    --input-padding: 13px 20px;
+    --input-size: 1rem;
+    /* --input-size: 12px; */
+    --border-radius: 25px;
+    --full-rounded: 50px;
+    --bold: bold;
+    /* --brand: "HeadingProWide"; */
+    --font-family: "Montserrat";
+
+    background-color: var(--primary);
+    padding: var(--input-padding);
+    font-size: var(--input-size);
+    font-family: var(--font-family);
+    line-height: var(--input-size);
+    color: var(--secondary);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--secondary);
+    max-width: 380px;
+    accent-color: var(--blue);
+}
+
+.input:hover {
+    box-shadow: 0 0 2px 0px var(--secondary);
+}

@@ -1,8 +1,8 @@
-import HomePage from '@/pages/HomePage/HomePage'
+import ClientActivationPage from '@/pages/ClientActivationPage/ClientActivationPage'
 import './App.css'
 
 function App() {
-  return <HomePage />
+  return <ClientActivationPage />
 }
 
 export default App

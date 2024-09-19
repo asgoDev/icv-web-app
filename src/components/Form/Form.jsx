@@ -1,8 +1,9 @@
 import { useForm } from 'react-hook-form'
 // import { PropTypes } from "prop-types";
-import { Input } from './src/components/Input/Input.jsx'
+import Input from '@/components/Input/Input'
+import './form.css'
 
-const Form = ({ formConfig }) => {
+const Form = ({ config }) => {
   const { register, handleSubmit } = useForm()
 
   const onSubmit = handleSubmit((data) => {
@@ -11,7 +12,7 @@ const Form = ({ formConfig }) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      {formConfig.map((inputConfig, i) => (
+      {config.map((inputConfig, i) => (
         <Input key={i} config={inputConfig} register={register} />
       ))}
 
@@ -21,7 +22,7 @@ const Form = ({ formConfig }) => {
 }
 
 // Form.PropTypes = {
-//   formConfig: PropTypes.arrayOf(PropTypes.object)
+//   config: PropTypes.arrayOf(PropTypes.object)
 // }
 
 export default Form
