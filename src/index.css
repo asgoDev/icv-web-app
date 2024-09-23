@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* 
+@font-face {
+  font-family: 'HeadingProWide';
+  src: url('./assets/fonts/Heading-Pro-Wide-Black-trial.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 :root {
   font-family: 'Monserrat', Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 20px;
@@ -10,7 +18,11 @@
   --blue: #0066ff;
 
   --primary: var(--black);
-  --secondary: var(--white)
+  --secondary: var(--white);
+  --highlight: var(--secondary)
+    /* highlight correspondera a un tercer color en la version clara, en ese cas sera azul
+  pero en el dark mode si sera el mismo que el secundario. esto quedara mejor definido cuando 
+  se establezca el el conjunto de colores segun el esquema escogido */
 }
 
 * {

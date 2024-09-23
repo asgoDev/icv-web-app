@@ -21,6 +21,7 @@
     color: var(--secondary);
     border-radius: var(--border-radius);
     border: 2px solid var(--secondary);
+    width: 100%;
     max-width: 380px;
     accent-color: var(--blue);
 }
