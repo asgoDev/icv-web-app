@@ -8,3 +8,9 @@
   width: 100%;
   height: 100dvh;
 }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: var(--mw-container);
+}

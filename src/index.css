@@ -19,10 +19,20 @@
 
   --primary: var(--black);
   --secondary: var(--white);
-  --highlight: var(--secondary)
-    /* highlight correspondera a un tercer color en la version clara, en ese cas sera azul
+  --highlight: var(--secondary);
+  /* highlight correspondera a un tercer color en la version clara, en ese cas sera azul
   pero en el dark mode si sera el mismo que el secundario. esto quedara mejor definido cuando 
   se establezca el el conjunto de colores segun el esquema escogido */
+
+  --mw-container: 1360px;
+  --font-family: "Montserrat";
+
+  --input-radius: 25px;
+  --input-padding: 13px 20px;
+  --input-size: 1rem;
+  --input-bg: var(--primary);
+  --input-border: 2px solid var(--secondary);
+  --input-color: var(--secondary);
 }
 
 * {

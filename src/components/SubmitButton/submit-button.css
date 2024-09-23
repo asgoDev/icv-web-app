@@ -1,0 +1,15 @@
+.submit-button {
+    border-radius: var(--input-radius);
+    padding: var(--input-padding);
+    background: var(--blue);
+    border: none;
+    color: var(--input-color);
+    font-size: var(--input-size);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background: var(--input-color);
+    color: var(--blue);
+}

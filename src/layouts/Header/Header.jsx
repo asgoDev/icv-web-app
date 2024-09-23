@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header container">
       <HeaderLogo color={'var(--highlight)'} />
     </header>
   )

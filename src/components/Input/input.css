@@ -1,31 +1,26 @@
-.input-label {
+.input-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.input {
-    --input-padding: 13px 20px;
-    --input-size: 1rem;
-    /* --input-size: 12px; */
-    --border-radius: 25px;
-    --full-rounded: 50px;
-    --bold: bold;
-    /* --brand: "HeadingProWide"; */
-    --font-family: "Montserrat";
-
-    background-color: var(--primary);
-    padding: var(--input-padding);
-    font-size: var(--input-size);
-    font-family: var(--font-family);
-    line-height: var(--input-size);
-    color: var(--secondary);
-    border-radius: var(--border-radius);
-    border: 2px solid var(--secondary);
+    border-radius: var(--input-radius);
+    border: var(--input-border);
     width: 100%;
     max-width: 380px;
     accent-color: var(--blue);
+    overflow: hidden;
 }
 
-.input:hover {
+.input {
+
+    flex-grow: 1;
+    padding: var(--input-padding);
+    color: var(--input-color);
+    background-color: var(--input-bg);
+    font-size: var(--input-size);
+    font-family: var(--font-family);
+    line-height: var(--input-size);
+    border: none;
+    outline: none;
+}
+
+.input-label:hover {
     box-shadow: 0 0 2px 0px var(--secondary);
 }

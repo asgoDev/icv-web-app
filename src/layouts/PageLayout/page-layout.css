@@ -6,8 +6,10 @@
 }
 
 .page-layout__content {
-    margin: auto;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1200px;
+    padding: 0 2rem;
+    /* background-image: url('@/assets/aliados.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-attachment: fixed; */
 }

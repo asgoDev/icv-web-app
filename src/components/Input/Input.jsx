@@ -4,15 +4,15 @@ import './input.css'
 const Input = ({ config, register }) => {
   let { label, type = 'text', name } = config
   return (
-    // <label className='form-input_label'>
-    <input
-      className="input"
-      name={name}
-      type={type}
-      placeholder={label}
-      {...register(name)}
-    />
-    // </label>
+    <label className="input-container">
+      <input
+        className="input"
+        name={name}
+        type={type}
+        placeholder={label}
+        {...register(name)}
+      />
+    </label>
   )
 }
 

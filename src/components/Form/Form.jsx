@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 // import { PropTypes } from "prop-types";
 import Input from '@/components/Input/Input'
+import SubmitButton from '@/components/SubmitButton/SubmitButton'
 import './form.css'
 
 const Form = ({ config }) => {
@@ -16,7 +17,7 @@ const Form = ({ config }) => {
         <Input key={i} config={inputConfig} register={register} />
       ))}
 
-      <button type="submit">Copiar al portapapeles</button>
+      <SubmitButton label={'Solicitar Activación'} />
     </form>
   )
 }

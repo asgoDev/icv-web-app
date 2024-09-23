@@ -1,6 +1,6 @@
 .header-logo {
-    width: 40%;
-    min-width: 120px;
+    flex-basis: 40%;
+    min-width: 160px;
     max-width: 265px;
 }
 
