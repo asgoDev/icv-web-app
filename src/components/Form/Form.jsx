@@ -5,18 +5,28 @@ import SubmitButton from '@/components/SubmitButton/SubmitButton'
 import './form.css'
 
 const Form = ({ config }) => {
-  const { register, handleSubmit } = useForm()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  console.log(errors)
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data)
+    alert(JSON.stringify(data))
   })
 
   return (
     <form className="form" onSubmit={onSubmit}>
       {config.map((inputConfig, i) => (
-        <Input key={i} config={inputConfig} register={register} />
+        <Input
+          key={i}
+          config={inputConfig}
+          register={register}
+          errors={errors}
+        />
       ))}
-
       <SubmitButton label={'Solicitar Activación'} />
     </form>
   )

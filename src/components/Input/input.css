@@ -1,15 +1,18 @@
 .input-container {
+
+    width: 100%;
+    max-width: 380px;
+}
+
+.input-label {
     display: flex;
     border-radius: var(--input-radius);
     border: var(--input-border);
-    width: 100%;
-    max-width: 380px;
     accent-color: var(--blue);
     overflow: hidden;
 }
 
 .input {
-
     flex-grow: 1;
     padding: var(--input-padding);
     color: var(--input-color);
@@ -23,4 +26,15 @@
 
 .input-label:hover {
     box-shadow: 0 0 2px 0px var(--secondary);
+}
+
+.input__alert-box {
+    color: red;
+    font-size: small;
+    padding-left: 1rem;
+    /* display: none; */
+}
+
+.input[type="date"] {
+    margin-right: 1rem;
 }
