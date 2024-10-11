@@ -1,10 +1,25 @@
 // import { PropTypes } from 'prop-types'
+import { useState } from 'react'
 import ButtonIcon from '@/components/ButtonIcon/ButtonIcon'
 
 import './input.css'
 
 const Input = ({ config, register, errors, setValue }) => {
   let { label, type = 'text', name, defaultValue, params, inputFx } = config
+
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleClick = async (fx) => {
+    setIsLoading(true)
+    try {
+      const fetchData = await fx()
+      setValue(name, await fetchData)
+    } catch (error) {
+      console.error('Error obteniedo datos', error)
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <div className="input-container">
@@ -25,8 +40,9 @@ const Input = ({ config, register, errors, setValue }) => {
             className="input-button"
             onClick={(e) => {
               e.preventDefault()
-              setValue(name, '234a8908890A987A7098789A')
+              handleClick(inputFx.fx)
             }}
+            disabled={isLoading}
           >
             <ButtonIcon icon={inputFx.ico} />
           </button>
