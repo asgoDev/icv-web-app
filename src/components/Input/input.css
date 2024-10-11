@@ -13,8 +13,8 @@
 }
 
 .input {
-    flex-grow: 1;
     padding: var(--input-padding);
+    flex-grow: 1;
     color: var(--input-color);
     background-color: var(--input-bg);
     font-size: var(--input-size);
@@ -36,5 +36,14 @@
 }
 
 .input[type="date"] {
-    margin-right: 1rem;
+    margin-right: 1.3rem;
+}
+
+.input-button {
+    background: transparent;
+    color: var(--secondary);
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
 }

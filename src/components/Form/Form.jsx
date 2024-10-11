@@ -9,9 +9,10 @@ const Form = ({ config }) => {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
   } = useForm()
 
-  console.log(errors)
+  // console.log(errors)
 
   const onSubmit = handleSubmit((data) => {
     alert(JSON.stringify(data))
@@ -25,6 +26,7 @@ const Form = ({ config }) => {
           config={inputConfig}
           register={register}
           errors={errors}
+          setValue={setValue}
         />
       ))}
       <SubmitButton label={'Solicitar Activación'} />

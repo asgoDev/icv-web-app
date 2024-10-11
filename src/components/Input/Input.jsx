@@ -1,8 +1,11 @@
 // import { PropTypes } from 'prop-types'
+import ButtonIcon from '@/components/ButtonIcon/ButtonIcon'
+
 import './input.css'
 
-const Input = ({ config, register, errors }) => {
-  let { label, type = 'text', name, defaultValue, params } = config
+const Input = ({ config, register, errors, setValue }) => {
+  let { label, type = 'text', name, defaultValue, params, inputFx } = config
+
   return (
     <div className="input-container">
       <label className="input-label" htmlFor={name}>
@@ -17,6 +20,17 @@ const Input = ({ config, register, errors }) => {
             ...params,
           })}
         />
+        {inputFx && (
+          <button
+            className="input-button"
+            onClick={(e) => {
+              e.preventDefault()
+              setValue(name, '234a8908890A987A7098789A')
+            }}
+          >
+            <ButtonIcon icon={inputFx.ico} />
+          </button>
+        )}
       </label>
       {errors[name] && (
         <span className="input__alert-box">{errors[name].message}</span>
