@@ -13,7 +13,7 @@ const Input = ({ config, register, errors, setValue }) => {
     setIsLoading(true)
     try {
       const fetchData = await fx()
-      setValue(name, await fetchData)
+      setValue(name, fetchData)
     } catch (error) {
       console.error('Error obteniedo datos', error)
     } finally {

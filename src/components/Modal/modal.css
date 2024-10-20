@@ -1,0 +1,12 @@
+.modal-background {
+    background: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    backdrop-filter: blur(2px);
+    display: grid;
+    place-content: center;
+}
