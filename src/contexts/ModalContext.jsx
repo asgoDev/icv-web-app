@@ -23,7 +23,7 @@ const ModalContextProvider = ({ children }) => {
       value={{ modal: 'soy el context de modales', openModal, closeModal }}
     >
       {children}
-      {isOpen && <Modal>{modalContent}</Modal>}
+      {/* {isOpen && <Modal>{modalContent}</Modal>} */}
     </ModalContext.Provider>
   )
 }

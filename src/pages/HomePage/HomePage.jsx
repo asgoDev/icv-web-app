@@ -1,11 +1,5 @@
-import PageLayout from '@/layouts/PageLayout/PageLayout'
-
 const HomePage = () => {
-  return (
-    <PageLayout>
-      <h1>Home</h1>
-    </PageLayout>
-  )
+  return <p>Home</p>
 }
 
 export default HomePage
