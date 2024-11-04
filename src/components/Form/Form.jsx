@@ -13,14 +13,14 @@ const Form = ({ config }) => {
   } = useForm()
 
   // console.log(errors)
-
+  const { submitFx, inputsConfig } = config
   const onSubmit = handleSubmit((data) => {
-    alert(JSON.stringify(data))
+    submitFx(data)
   })
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      {config.map((inputConfig, i) => (
+      {inputsConfig.map((inputConfig, i) => (
         <Input
           key={i}
           config={inputConfig}

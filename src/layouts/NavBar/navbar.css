@@ -1,0 +1,74 @@
+#nav__toggle-checkbox,
+.nav__toggle-label {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-container {
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    padding: 1rem 2rem;
+    user-select: none;
+    display: none;
+    overflow: auto;
+}
+
+#nav__toggle-checkbox:checked~.navbar-container {
+    display: block;
+}
+
+
+.navbar-title {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar_list {
+    /* Aqui mantenemos todos las listas cerradas por defecto */
+    font-size: 1.2rem;
+    display: none;
+    list-style: none;
+    font-weight: 300;
+}
+
+/* Coloreado de los items */
+
+.navbar_item {
+    /* font-weight: lighter; */
+    margin-bottom: .2rem;
+    /* border-bottom: 1px solid white; */
+    width: fit-content;
+}
+
+.navbar_item:has(ul) {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+
+}
+
+.navbar_item>.navbar_list {
+    padding-left: 1rem;
+}
+
+/* ------------ */
+
+
+.navbar-container>.navbar_list {
+    /* hacemos visible la primera capa que serian nuestros menu items */
+    display: block;
+}
+
+.navbar_list-check {
+    /* los checkes no es necesario que se vean */
+    display: none;
+}
+
+.navbar_list-check:checked~ul {
+    display: block;
+}

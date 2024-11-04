@@ -10,7 +10,7 @@
 
 :root {
   font-family: 'Monserrat', Inter, system-ui, Helvetica, Arial, sans-serif;
-  line-height: 20px;
+  /* line-height: 20px; */
   font-weight: 300;
 
   --black: #111111;
@@ -39,6 +39,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  font-family: var(--font-family);
 }
 
 

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PageLayout from './layouts/PageLayout/PageLayout'
+import HomePage from './pages/HomePage/HomePage'
 import ClientActivationPage from '@/pages/ClientActivationPage/ClientActivationPage'
 import './App.css'
 
@@ -8,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageLayout />}>
-          <Route index element={<h1>Home</h1>} />
+          <Route index element={<HomePage />} />
           <Route
             path="formato-de-activacion"
             element={<ClientActivationPage />}
