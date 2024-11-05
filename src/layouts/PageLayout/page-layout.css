@@ -1,16 +1,19 @@
 .page-layout {
-    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
 }
 
 .page-layout__content {
-    padding: 0 2rem;
+    padding: 2rem;
     padding-bottom: 2rem;
     /* background-image: url('@/assets/aliados.svg');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
     background-attachment: fixed; */
+
+    overflow: auto;
 }

@@ -1,13 +1,13 @@
 .header {
-    padding: 3rem 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: -1rem;
+    position: relative;
     background-image: linear-gradient(to bottom, var(--primary) 80%, transparent);
     z-index: 5;
-
+    transform: translateY(1rem);
     user-select: none;
 
 }
