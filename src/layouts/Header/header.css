@@ -2,8 +2,12 @@
     padding: 3rem 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: -1rem;
     background-image: linear-gradient(to bottom, var(--primary) 80%, transparent);
-    z-index: 10;
+    z-index: 5;
+
+    user-select: none;
+
 }

@@ -1,19 +1,25 @@
+import { NavLink, Link } from 'react-router-dom'
 import { navBar } from './navbar-config.js'
 import './navbar.css'
 
 const NavBar = () => {
   return (
-    <nav className="nav">
-      <input type="checkbox" name="" id="nav__toggle-checkbox" />
-      <label className="nav__toggle-label" htmlFor="nav__toggle-checkbox">
-        Menu
-      </label>
+    <nav className="navbar">
+      <input type="checkbox" name="" id="navbar__toggle-checkbox" />
+      <label
+        className="navbar__toggle-label"
+        htmlFor="navbar__toggle-checkbox"
+      ></label>
       <div className="navbar-container">
         <h3 className="navbar-title">Menú</h3>
         <NavUl ulData={navBar} />
       </div>
     </nav>
   )
+}
+
+const closeMenu = () => {
+  document.querySelector('#navbar__toggle-checkbox').click()
 }
 
 const NavUl = ({ ulData }) => {
@@ -32,9 +38,21 @@ const NavLi = ({ liData }) => {
 
   return (
     <li className="navbar_item">
-      <label htmlFor={id}>{title}</label>
-      <input id={id} className="navbar_list-check" type="checkbox" />
-      {subitems && <NavUl ulData={subitems} />}
+      {navlink ? (
+        // aqui deberia mostrarme un navlink
+        <label htmlFor={id}>{title}</label>
+      ) : (
+        <Link to={url} onClick={closeMenu}>
+          <label htmlFor={id}>{title}</label>
+        </Link>
+      )}
+
+      {subitems && (
+        <>
+          <input id={id} className="navbar_list-check" type="checkbox" />
+          <NavUl ulData={subitems} />
+        </>
+      )}
     </li>
   )
 }

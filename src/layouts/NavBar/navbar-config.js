@@ -4,7 +4,7 @@ export const navBar = [
     navlink: true,
     url: '',
     subitems: [
-      { title: 'Solicitar Activación', url: '' },
+      { title: 'Solicitar Activación', url: '/formato-de-activacion' },
       {
         title: 'Solicitudes de Activación',
         url: '',

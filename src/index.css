@@ -41,12 +41,19 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   font-family: var(--font-family);
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 
 body {
   background-color: var(--primary);
   color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* @media (prefers-color-scheme: light) {
