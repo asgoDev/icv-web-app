@@ -3,11 +3,11 @@
     overflow: hidden;
     position: relative;
     display: grid;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: max-content;
 }
 
 .page-layout__content {
-    padding: 2rem;
+    padding: 1rem 2rem;
     padding-bottom: 2rem;
     /* background-image: url('@/assets/aliados.svg');
     background-repeat: no-repeat;
@@ -16,4 +16,10 @@
     background-attachment: fixed; */
 
     overflow: auto;
+}
+
+.page-layout__title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
 }

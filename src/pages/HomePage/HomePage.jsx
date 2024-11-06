@@ -1,10 +1,7 @@
+import PageLayout from '@/layouts/PageLayout/PageLayout'
+
 const HomePage = () => {
-  return (
-    <h1>
-      Home{' '}
-      <span style={{ fontSize: '1rem', fontWeight: '100' }}>/ resumen</span>
-    </h1>
-  )
+  return <PageLayout title={'Inicio'}></PageLayout>
 }
 
 export default HomePage

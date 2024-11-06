@@ -1,20 +1,21 @@
-import { Outlet } from 'react-router-dom'
 import { ModalContextProvider } from '@/contexts/ModalContext'
 import Header from '../Header/Header'
-// import Footer from '../Footer/Footer'
 import './page-layout.css'
 
-const PageLayout = () => {
+const PageLayout = ({ children, title }) => {
   return (
+    // <PageLayoutContextProvider>
     <div className="page-layout container">
       <ModalContextProvider>
         <Header />
         <div className="page-layout__content">
-          <Outlet />
+          <h1 className="page-layout__title">{title}</h1>
+          {children}
+          {/* <Footer /> */}
         </div>
-        {/* <Footer /> */}
       </ModalContextProvider>
     </div>
+    // </PageLayoutContextProvider>
   )
 }
 
