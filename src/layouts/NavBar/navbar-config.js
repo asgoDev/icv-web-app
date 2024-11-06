@@ -4,10 +4,13 @@ export const navBar = [
     navlink: true,
     url: '',
     subitems: [
-      { title: 'Solicitar Activación', url: '/formato-de-activacion' },
+      {
+        title: 'Solicitar Activación',
+        url: 'instalaciones/formato-de-activacion',
+      },
       {
         title: 'Solicitudes de Activación',
-        url: '',
+        url: '/instalaciones',
       },
     ],
   },

@@ -1,7 +1,7 @@
-import PageLayout from '@/layouts/PageLayout/PageLayout'
+import PageContentLayout from '@/layouts/PageContentLayout/PageContentLayout'
 
 const HomePage = () => {
-  return <PageLayout title={'Inicio'}></PageLayout>
+  return <PageContentLayout title={'Inicio'}></PageContentLayout>
 }
 
 export default HomePage
