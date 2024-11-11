@@ -5,14 +5,12 @@ import './page-layout.css'
 
 const PageLayout = () => {
   return (
-    // <PageLayoutContextProvider>
-    <div className="page-layout container">
-      <ModalContextProvider>
+    <ModalContextProvider>
+      <div className="page-layout container">
         <Header />
         <Outlet />
-      </ModalContextProvider>
-    </div>
-    // </PageLayoutContextProvider>
+      </div>
+    </ModalContextProvider>
   )
 }
 

@@ -17,6 +17,12 @@
   --white: #ffffff;
   --blue: #0066ff;
 
+  /* status color */
+
+  --green: #00ff22a8;
+  --yellow: #ffe600a8;
+  --red: #ff0000a8;
+
   --primary: var(--black);
   --secondary: var(--white);
   --highlight: var(--secondary);

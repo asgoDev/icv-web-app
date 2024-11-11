@@ -17,6 +17,7 @@ function App() {
               path="formato-de-activacion"
               element={<ClientActivationPage />}
             />
+            {/* <Route path=":id" element={<InstallationDetail />} /> */}
           </Route>
         </Route>
 
