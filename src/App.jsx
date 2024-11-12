@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage/HomePage'
 import PageLayout from './layouts/PageLayout/PageLayout'
 import ClientActivationPage from '@/pages/ClientActivationPage/ClientActivationPage'
 import InstallationRequestsPage from './pages/InstallationRequestsPage/InstallationRequestsPage'
+import InstallationDetail from './pages/InstallationDetail/InstallationDetail'
 import './App.css'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
               path="formato-de-activacion"
               element={<ClientActivationPage />}
             />
-            {/* <Route path=":id" element={<InstallationDetail />} /> */}
+            <Route path=":id" element={<InstallationDetail />} />
           </Route>
         </Route>
 

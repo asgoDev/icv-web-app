@@ -1,13 +1,15 @@
+import { Link } from 'react-router-dom'
 import { Formatter } from '@/utils/formatter.js'
 import './card.css'
 
-const handleClick = ({ id, ci, name, lastName }) => {
-  const message = [id, ci, name, lastName].join(' ')
-  alert(message)
-}
+// const handleClick = ({ id, ci, name, lastName }) => {
+//   const message = [id, ci, name, lastName].join(' ')
+//   alert(message)
+// }
 
 const Card = ({ installationData = {} }) => {
   const {
+    id,
     name = 'name',
     lastName = 'lastName',
     ci = '12345678',
@@ -16,18 +18,17 @@ const Card = ({ installationData = {} }) => {
   } = installationData
 
   return (
-    <div
-      className={`card card-status--${status}`}
-      onClick={() => {
-        handleClick(installationData)
-      }}
-    >
-      <article className="card_content">
-        <h3 className="card_title">{Formatter.toShortName(name, lastName)}</h3>
-        <span className="card_ci">{Formatter.toCiFormat(ci)}</span>
-        <span className="card_date">{date}</span>
-      </article>
-    </div>
+    <article className={`card card-status--${status}`}>
+      <Link to={`/instalaciones/${id}`}>
+        <div className="card_content">
+          <h3 className="card_title">
+            {Formatter.toShortName(name, lastName)}
+          </h3>
+          <span className="card_ci">{Formatter.toCiFormat(ci)}</span>
+          <span className="card_date">{date}</span>
+        </div>
+      </Link>
+    </article>
   )
 }
 
